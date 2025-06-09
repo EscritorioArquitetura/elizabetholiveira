@@ -767,7 +767,31 @@
                 });
             });
         });
+        <!-- Dentro do formulário de contato -->
+<form action="https://formsubmit.co/elizabetholiveira.arquitetura@gmail.com" method="POST" class="space-y-4">
+    <!-- Campos ocultos opcionais -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
 
+    <input type="text" name="nome" placeholder="Nome *" required class="w-full px-4 py-2 bg-gray-100 rounded-md">
+    <input type="email" name="email" placeholder="E-mail *" required class="w-full px-4 py-2 bg-gray-100 rounded-md">
+    <input type="tel" name="telefone" placeholder="Telefone" class="w-full px-4 py-2 bg-gray-100 rounded-md">
+    
+    <select name="tipo_projeto" required class="w-full px-4 py-2 bg-gray-100 rounded-md">
+        <option value="" disabled selected>Tipo de Projeto *</option>
+        <option value="Residencial">Residencial</option>
+        <option value="Comercial">Comercial</option>
+        <option value="Reforma">Reforma</option>
+        <option value="Design de Interiores">Design de Interiores</option>
+    </select>
+
+    <textarea name="mensagem" rows="4" placeholder="Mensagem *" required class="w-full px-4 py-2 bg-gray-100 rounded-md"></textarea>
+    
+    <button type="submit" class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 transition">Enviar Mensagem</button>
+</form>
+
+
+        /*
         // Form submission
         const contactForm = document.querySelector('#contact form');
         if (contactForm) {
